@@ -206,7 +206,7 @@ h1, h2, h3, h4 {
 
 #### 什么是 MCP？
 
-**多模态通讯协议（Multi-Modal Communication Protocol）**
+**模型上下文通讯协议 （Model Context Protocol）**
 
 **特点：**
 
