@@ -1,5 +1,5 @@
 ---
-title: "AI Agent与MCP工具：企业定制AI工作流实践"
+title: "AI Agent 实践心得：Agent、RAG、MCP 全解析"
 date: 2024-05-18
 classes: wide
 layout: splash
@@ -36,17 +36,17 @@ h1, h2, h3, h4 {
 }
 </style>
 
-## AI Agent 与 MCP 工具：企业定制 AI 工作流实践
+## AI Agent 实践心得：Agent、RAG、MCP 全解析
 
 ### 前言
 
-本次分享将结合我们团队打造的《后台小仙女》AI 助手案例，讲解 AI Agent 的核心概念、主流的实现方案。以及当下备受关注的 MCP 是什么，如何借助 MCP 构建高效、可扩展的企业级 AI 工作流。
+本次分享将结合我们团队的 AI 助手案例，讲解 AI Agent 的核心概念、主流的实现方案。以及当下备受关注的 MCP 是什么，如何借助 MCP 构建高效、可扩展的企业级 AI 工作流。
 
 ---
 
-### 《后台小仙女》AI 助手演示
+### AI 助手演示
 
-<video src="https://www.bilibili.com/video/BV1qv4y1D7gW" width="100%" height="500px" controls="controls" autoplay="false" loop="false" muted="false"></video>
+**《demo》**
 
 ---
 
@@ -128,13 +128,13 @@ h1, h2, h3, h4 {
 
 {% include figure popup=true image_path="/assets/images/2025-05-18/image4.png" %}
 
-> 来自内部 copilot 平台的编排演示
-
 ---
 
-#### 3. Agents
+#### 3. Agents（自主工作流）
 
 由大模型自主决策和执行任务，无需外部流程，仅依靠自身能力完成全流程操作。
+
+> https://www.anthropic.com/engineering/building-effective-agents
 
 {% include figure popup=true image_path="/assets/images/2025-05-18/image3.png" %}
 
@@ -161,8 +161,6 @@ h1, h2, h3, h4 {
 - 工人：执行具体子任务的智能体，完成各自分配的工作并将结果反馈给主管
 
 {% include figure popup=true image_path="/assets/images/2025-05-18/image6.png" %}
-
-> 来自内部 copilot 平台的编排演示
 
 ---
 
@@ -222,7 +220,7 @@ h1, h2, h3, h4 {
 
 - 通过社区里大家提供的各种 MCP，AI 可以轻松接入各类工具和服务
 
-<video src="https://www.bilibili.com/video/BV1qv4y1D7gW" width="100%" height="500px" controls="controls" autoplay="false" loop="false" muted="false"></video>
+**《演示》**
 
 ---
 
@@ -242,7 +240,10 @@ h1, h2, h3, h4 {
 #### MCP Server 云函数实践
 
 - MCP Server 作为云函数，支持灵活扩展
-- 适配多种业务场景，提升 AI 工作流能力
+- 内置 SDK，适配多种业务场景，提升 AI 工作流能力
+
+{% include figure popup=true image_path="/assets/images/2025-05-18/image8.png" %}
+{% include figure popup=true image_path="/assets/images/2025-05-18/image9.png" %}
 
 ---
 
